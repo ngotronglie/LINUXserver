@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
 
         <!-- Filter -->
         <div class="mb-8 flex gap-4 flex-wrap">
-          <button 
+          <button
             *ngFor="let category of categories"
             (click)="selectedCategory = category"
             [class.bg-blue-600]="selectedCategory === category"
@@ -28,9 +28,9 @@ import { CommonModule } from '@angular/common';
         <!-- Products Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div *ngFor="let product of filteredProducts" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-            <img 
-              [src]="product.image" 
-              [alt]="product.name" 
+            <img
+              [src]="product.image"
+              [alt]="product.name"
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
@@ -61,7 +61,7 @@ export class ProductsComponent {
       category: 'Điện tử',
       description: 'Mô tả sản phẩm 1',
       price: 299000,
-      image: 'https://via.placeholder.com/300x200?text=Product+1'
+      image: 'https://picsum.photos/id/247/200/300'
     },
     {
       id: 2,
@@ -69,7 +69,7 @@ export class ProductsComponent {
       category: 'Thời trang',
       description: 'Mô tả sản phẩm 2',
       price: 199000,
-      image: 'https://via.placeholder.com/300x200?text=Product+2'
+      image: 'https://picsum.photos/id/123/200/300'
     },
     {
       id: 3,
@@ -77,7 +77,7 @@ export class ProductsComponent {
       category: 'Sách',
       description: 'Mô tả sản phẩm 3',
       price: 99000,
-      image: 'https://via.placeholder.com/300x200?text=Product+3'
+      image: 'https://picsum.photos/id/126/200/300'
     },
     {
       id: 4,
@@ -85,7 +85,7 @@ export class ProductsComponent {
       category: 'Thực phẩm',
       description: 'Mô tả sản phẩm 4',
       price: 149000,
-      image: 'https://via.placeholder.com/300x200?text=Product+4'
+      image: 'https://picsum.photos/id/125/200/300'
     },
     {
       id: 5,
@@ -93,7 +93,7 @@ export class ProductsComponent {
       category: 'Điện tử',
       description: 'Mô tả sản phẩm 5',
       price: 399000,
-      image: 'https://via.placeholder.com/300x200?text=Product+5'
+      image: 'https://picsum.photos/id/124/200/300'
     },
     {
       id: 6,
@@ -101,7 +101,7 @@ export class ProductsComponent {
       category: 'Thời trang',
       description: 'Mô tả sản phẩm 6',
       price: 249000,
-      image: 'https://via.placeholder.com/300x200?text=Product+6'
+      image: 'https://picsum.photos/id/123/200/300'
     }
   ];
 
